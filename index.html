@@ -9,30 +9,23 @@
 
 <body>
     <!-- <form> -->
-        <div>
-            <h2>signup</h2>
-            <label for="eamil">
-                Email: <br />
-                <input type="email" name="eamil" id="email">
-            </label>
-            <br />
-            <label for="password">
-                Password: <br />
-                <input type="password" name="password" id="password">
-            </label>
-            <br />
-            <label for="phoneNumber">
-                Phone Number: <br />
-                <input type="text" name="phoneNumber" id="phoneNumber">
-            </label>
-            <br />
-            <button id="signUpBtn">Sign Up</button>
-            <button id="signInBtn">Sign In</button>
-        </div>
+    <div>
+        <h2>Phone Auth</h2>
+        <label for="phoneNumber">
+            Phone Number: <br />
+            <input type="number" name="phone" id="phone">
+        </label>
+        <button id="sendCodeBtn">send code</button>
+        <br/>
+        <label for="phoneNumber">
+            OTP <br />
+            <input type="number" name="otp" id="otp">
+        </label>
+        <button id="verifyBtn">Submit</button>
+        <br/>   
         <button id="logOutBtn">Log Out</button>
-        <button id="verifyBtn">Send Verification Email</button>
-        <button id="sendCode">send code</button>
         <div id="recaptchaContainer"></div>
+    </div>
     <!-- </form> -->
 
     <script type="module" src="app.js"></script>
